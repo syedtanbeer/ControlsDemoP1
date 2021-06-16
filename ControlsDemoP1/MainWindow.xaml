@@ -1,0 +1,99 @@
+﻿<Window x:Class="ControlsDemoP1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ControlsDemoP1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <!--<Grid>
+        -->
+    <!--<StackPanel>
+            <Image Source="/Penguins.jpg" Stretch="Uniform" StretchDirection="Both" Height="295" Margin="0,0,204,0"  />
+            <Label Content="This is Segoe UI, 12 point (the default) font." HorizontalAlignment="Center" />
+            <Label Content="This is Times New Roman, 12 point (the default) font." HorizontalAlignment="Center" FontFamily="Times New Roman" FontSize="16" FontWeight="Bold" FontStyle="Italic" />
+            
+            <TextBlock HorizontalAlignment="Stretch" FontSize="18" LineHeight="30" TextWrapping="NoWrap" TextTrimming="CharacterEllipsis" Margin="0,0,30,0">
+            Text in this <Italic>text block </Italic> can have <Underline>various </Underline> <Bold>features</Bold>.
+                You can also add link to <Hyperlink> Sheridan College</Hyperlink>. <LineBreak/> Add a button <Button Content="Hello"/>.
+                Include superscript <Run BaselineAlignment="Superscript" FontSize="8">Superscript</Run> <Run BaselineAlignment="Subscript" FontSize="7">Subscript</Run>
+            </TextBlock>
+
+           
+        </StackPanel>-->
+
+    <!--<GroupBox Header="Database Operations" HorizontalAlignment="Left" Height="100" Margin="296,272,0,0" VerticalAlignment="Top" Width="126"/>
+        <GroupBox Header="Business Operations" HorizontalAlignment="Left" Height="100" Margin="521,272,0,0" VerticalAlignment="Top" Width="100"/>-->
+    <!--
+        
+    </Grid>-->
+    <!--<StackPanel>
+        <Expander Header="Personal Information" Background="Blue" Foreground="Yellow" IsExpanded="True">
+            <Label Content="Test1"/>
+        </Expander>
+        <Expander Header="Education" Background="Blue" Foreground="Yellow" >
+            <Label Content="Test2"/>
+        </Expander>
+        <Expander Header="Professional Background" Background="Blue" Foreground="Yellow" >
+            <Label Content="Test3"/>
+        </Expander>
+    </StackPanel>-->
+
+    <!--<StatusBar HorizontalAlignment="Stretch" VerticalAlignment="Bottom">
+        <StatusBarItem>
+            <Label Name="lblDate" Content="April 1, 2020"/>
+        </StatusBarItem>
+        <StatusBarItem>
+            -->
+    <!--A separator -->
+    <!--
+        <Label Width="10"/>
+        </StatusBarItem>
+        <StatusBarItem>
+            <StackPanel Orientation="Horizontal">
+                <Label Content="Status:"/>
+            </StackPanel>
+        </StatusBarItem>
+        <StatusBarItem>
+            <Grid>
+                <Image Name="imgStatusGood" Source="Penguins.jpg" Stretch="Fill"/>
+            </Grid>
+        </StatusBarItem>
+        <StatusBarItem HorizontalAlignment="Right">
+            <StackPanel Orientation="Horizontal">
+                <ProgressBar Name="prgSecond" Width="100" Height="15" Minimum="0" Maximum="59" Value="40"/>
+                <Label Name="lblClock" Canvas.Right="0" Content="10:38:13 AM" />
+                </StackPanel>
+                </StatusBarItem>
+                </StatusBar>-->
+    <TabControl>
+        <TabItem Header="Personal Information" Foreground="Green" Background="LightBlue">
+            <Grid Margin="3" Width="Auto" HorizontalAlignment="Stretch">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="100"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="80"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="30"/>
+                </Grid.RowDefinitions>
+                <Image Grid.Row="0" Source="Penguins.jpg" Width="75" Height="75"/>
+                <Label Grid.Row="1" Grid.Column="0" Content="First Name:"/>
+                <TextBox Grid.Row="1" Grid.Column="1" Text="Happy"/>
+                <Label Grid.Row="2" Grid.Column="0" Content="Last Name:"/>
+                <TextBox Grid.Row="2" Grid.Column="1" Text="Golucky"/>
+                <Label Grid.Row="3" Grid.Column="0" Content="Hair Color:"/>
+                <TextBox Grid.Row="3" Grid.Column="1" Text="(None)"/>
+            </Grid>
+        </TabItem>
+        <TabItem Header="Education">
+            <Label Content="Here goes your educaiton info." />
+        </TabItem>
+        <TabItem Header="Professional Background">            
+                <Button Content="Button" Width="75" Height="75"/>            
+        </TabItem>
+    </TabControl>
+
+</Window>
